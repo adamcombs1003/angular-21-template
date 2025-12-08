@@ -1,0 +1,27 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav-content {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-sidenav {
+  border-right-color: var(--mat-sys-primary-container);
+  border-radius: 7px;
+  width: 200px;
+}
+
+mat-toolbar, mat-icon {
+  color: var(--mat-sys-primary-container);
+}
+
+.app-title {
+  margin-left: 20px;
+}
