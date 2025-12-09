@@ -1,3 +1,4 @@
+
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
 // components according to the Material 3 design spec.
@@ -10,7 +11,6 @@ html {
     color: (
       primary: mat.$violet-palette,
       tertiary: mat.$azure-palette,
-      theme-type: dark,
     ),
     typography: Roboto,
     density: 0,
@@ -21,7 +21,7 @@ body {
   // Default the application to a light color theme. This can be changed to
   // `dark` to enable the dark color theme, or to `light dark` to defer to the
   // user's system settings.
-  color-scheme: light;
+  color-scheme: dark;
 
   // Set a default background, font and text colors for the application using
   // Angular Material's system-level CSS variables. Learn more about these
@@ -33,5 +33,10 @@ body {
   // Reset the user agent margin.
   margin: 0;
 }
+html, body { height: 100%; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-html, body { height: 100%; }
+:root {
+  @include mat.sidenav-overrides((
+    container-background-color: var(--mat-sys-primary-container)
+  ));
+}
