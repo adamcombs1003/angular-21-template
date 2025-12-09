@@ -12,5 +12,5 @@ import { MatToolbar } from '@angular/material/toolbar';
   styleUrl: './tool-bar.scss',
 })
 export class ToolBar {
-  title = 'Angular 20 Template';
+  title = 'Angular 21 Template';
 }
